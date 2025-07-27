@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-default: #fcfcfc;
+    --color-active-default: #e0e0e0;
+    --color-canvas-default: #fcfcfc;
+    --color-placeholder-default: #838383;
+    --color-submit-default: #b3b3b3;
+    --color-btn-default: #e0e0e0;
+    --color-fd-default: #2c303b;
+    --color-placeholder-default: #2c303b;
+    --color-icon-default: #2c303b;
+    --color-copy-default: #fcfcfc;
+    --color-scroll-default: #838383;
+    --color-error-default: #8e9097;
+    --bgcolor-navbar-hover: #344d68;
+    --bgcolor-navbar-click: #0f3460;
+    --bgcolor-navbar-default: #fcfcfc;
+    --color-font-color: #000;
+    --border-modal-color: #222f3e;
+    --border-search-color: #333333;
+    --article-content-default: #666666;
+    --article-content-tags-bgcolor: #f5f5f5;
+    --article-content-tags-bgcolor-hover: #dfe7f0;
+    --article-content-tags-font: #333333;
+    --article-content-tags-bgcolor-hover-font: #333333;
+    --article-content-top: #336699;
+    --bgcolor-social-default: #354b5d;
+    --home-category-color: #f5f5f5;
+    --user-content-color: #fff;
+    --user-content-font: #333;
+}
+
+[data-theme='light'] {
+    --color-default: #fcfcfc;
+    --color-active-default: #e0e0e0;
+    --color-canvas-default: #fcfcfc;
+    --color-placeholder-default: #838383;
+    --color-submit-default: #b3b3b3;
+    --color-btn-default: #e0e0e0;
+    --color-fd-default: #2c303b;
+    --color-placeholder-default: #2c303b;
+    --color-icon-default: #2c303b;
+    --color-copy-default: #fcfcfc;
+    --color-scroll-default: #838383;
+    --color-error-default: #8e9097;
+    --bgcolor-navbar-hover: #0f3460;
+    --bgcolor-navbar-click: #0f3460;
+    --bgcolor-page-default: #174f92;
+    --bgcolor-navbar-default: #fcfcfc;
+    --color-font-color: #000;
+    --border-modal-color: #222f3e;
+    --border-search-color: #333333;
+    --article-content-default: #666666;
+    --article-content-tags-bgcolor: #dfe7f0;
+    --article-content-tags-bgcolor-hover: #667090;
+    --article-content-tags-font: #333333;
+    --article-content-tags-bgcolor-hover-font: #fcfcfc;
+    --article-content-top: #336699;
+    --bgcolor-social-default: #354b5d;
+    --home-category-color: #f5f5f5;
+    --user-content-color: #dfe7f0;
+    --user-content-font: #333;
+    --page-count-color: #333;
+    --page-count-bgcolor: #dfe7f0;
+}
+
+[data-theme='night'] {
+    --color-default: #4b505c;
+    --color-active-default: #444851;
+    --color-canvas-default: #2c303b;
+    --color-submit-default: #393c44;
+    --color-btn-default: #444851;
+    --color-fd-default: #fcfcfc;
+    --color-placeholder-default: #fcfcfc;
+    --color-icon-default: #fcfcfc;
+    --color-scroll-default: #8e9097;
+    --color-error-default: #8e9097;
+    --bgcolor-navbar-default: #4b505c;
+    --bgcolor-navbar-hover: #ff7440;
+    --bgcolor-navbar-click: #ff7440;
+    --color-font-color: #fcfcfc;
+    --border-modal-color: #ff7440;
+    --border-search-color: #fcfcfc;
+    --article-content-default: #8e9097;
+    --article-content-tags-bgcolor: #888;
+    --article-content-tags-bgcolor-hover: #ff7440;
+    --article-content-tags-font: #fcfcfc;
+    --article-content-tags-bgcolor-hover-font: #fcfcfc;
+    --article-content-top: #ff7440;
+    --bgcolor-social-default: #ff7440;
+    --home-category-color: #f5f5f5;
+    --user-content-color: #ff7440;
+    --user-content-font: #4b505c;
+    --page-count-color: #fcfcfc;
+    --page-count-bgcolor: #888;
+    color: #fcfcfc;
+}
+
+body {
+    background-color: var(--color-default);
+    background-color: var(--color-active-default);
+    background-color: var(--color-canvas-default);
+    background-color: var(--color-fg-default);
+    background-color: var(--color-fd-default);
+    background-color: var(--color-icon-default);
+    background-color: var(--color-placeholder-default);
+    background-color: var(--color-copy-default);
+    background-color: var(--color-scroll-default);
+    background-color: var(--color-error-default);
+    background-color: var(--color-submit-default);
+    background-color: var(--color-btn-default);
+    background-color: var(--color-navbar-default);
+    background-color: var(--bgcolor-navbar-default);
+    background-color: var(--bgcolor-navbar-click);
+    background-color: var(--bgcolor-navbar-hover);
+    /* 导航颜色 */
+    background-color: var(--color-font-color);
+    /* 社交链接颜色 */
+    background-color: var(--bgcolor-social-default);
+    /* 搜索模态框边框 */
+    background-color: var(--border-modal-color);
+    /* 搜索边框 */
+    background-color: var(--border-search-color);
+    /* 文章内容 */
+    background-color: var(--article-content-default);
+    /* 文章列表标签 */
+    background-color: var(--article-content-tags-bgcolor);
+    /* 文章列表标签文字 */
+    background-color: var(--article-content-tags-font);
+    /* 文章列表标签悬浮 */
+    background-color: var(--article-content-tags-bgcolor-hover);
+    /* 文章列表悬浮后文字 */
+    background-color: var(--article-content-tags-bgcolor-hover-font);
+    /* 置顶颜色 */
+    background-color: var(--article-content-top);
+    /* 首页-分类 */
+    background-color: var(--home-category-color);
+    /* 头像栏内容悬浮效果 */
+    background-color: var(--user-content-color);
+    background-color: var(--user-content-font);
+    /* 分页页码颜色 */
+    background-color: var(--page-count-bgcolor);
+    background-color: var(--page-count-color);
+}

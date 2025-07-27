@@ -1,0 +1,93 @@
+.bg0 {
+    background-image: url(../../assets/images/bg01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  @media screen and (max-width: 768px){
+    .bg0 {
+      background-image: url(../../assets/images/bg01.webp);
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      z-index: 3;
+    }
+  }
+  .bg0:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../assets/images/bg01.webp);
+    -webkit-background-size: cover !important;
+    -o-background-size: cover;
+    background-size: cover !important;
+  }
+  
+  .bg1 {
+    background-image: url(../../assets/images/bg02.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 768px){
+    .bg1{
+      background-image: url(../../assets/images/bg02.webp);
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      z-index: 3;
+    }
+  }
+  .bg1:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../assets/images/bg02.webp);
+    -webkit-background-size: cover !important;
+    -o-background-size: cover;
+    background-size: cover !important;
+  }
+  
+  /*
+  .img_style {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--color-default);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } */
+  /* 动画效果 */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+  }
+  

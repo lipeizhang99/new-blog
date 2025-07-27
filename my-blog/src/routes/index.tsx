@@ -4,8 +4,13 @@ import lazyLoad from './lazyLoad'
 
 import type { RouteObject } from 'react-router-dom'
 
+import LayoutComponent from '@/pages/layout/index'
 const NotFound = lazy(() => import("@/pages/404"))
 const routes: RouteObject[] = [
+  {
+    path:'/',
+    element:<LayoutComponent/>
+  },
   {
     path: '*',
     element: lazyLoad(NotFound)
