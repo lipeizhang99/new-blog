@@ -10,18 +10,12 @@ export default defineConfig({
     }
   },
   server: {
+    open: false,
     port: 8179,
     proxy: {
       '/api': {
         target: 'http://localhost:7001',
         changeOrigin: true
-      }
-    }
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/styles/variables.scss";`
       }
     }
   }
