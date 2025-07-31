@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import lazyLoad from './lazyLoad'
-
+const Home = lazy(() => import('@/pages/home'))
 import type { RouteObject } from 'react-router-dom'
 
 import LayoutComponent from '@/pages/layout/index'
@@ -9,7 +9,13 @@ const NotFound = lazy(() => import("@/pages/404"))
 const routes: RouteObject[] = [
   {
     path:'/',
-    element:<LayoutComponent/>
+    element:<LayoutComponent/>,
+    children:[
+      {
+        index:true,
+        element:lazyLoad(Home)
+      }
+    ]
   },
   {
     path: '*',
